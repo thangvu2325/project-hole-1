@@ -48,6 +48,8 @@ import ModalAdd from "../../components/ModalAdd";
 import ImportButtonExcel from "../../components/ImportButtonExcel";
 import ExportButtonExcel from "../../components/ExportButtonExcel";
 import { PilePlanType } from "../../types";
+import routes from "../../config/route";
+import React from "react";
 
 interface PilePlanPageProps {}
 interface DataType {
@@ -225,7 +227,7 @@ const PilePlanPage: FunctionComponent<PilePlanPageProps> = () => {
             style={{ background: "#6366f1", color: "#fff" }}
             className="flex items-center mr-4 mt-4"
             onClick={() => {
-              navigate("/profile");
+              navigate(routes.pile);
             }}
           >
             <Title
@@ -238,7 +240,8 @@ const PilePlanPage: FunctionComponent<PilePlanPageProps> = () => {
                 alignItems: "center",
               }}
             >
-              <IconPlus width={18} height={18} className="mr-2">Show Map</IconPlus>
+              <IconPlus width={18} height={18} className="mr-2"></IconPlus>
+              Show Map
             </Title>
           </Button>
           <Button

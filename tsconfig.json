@@ -9,8 +9,6 @@
     "paths": {
       "*": ["*", "types/*"]
     },
-    "jsx": "react",
-    
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -18,7 +16,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
 
     /* Linting */
     "strict": true,
